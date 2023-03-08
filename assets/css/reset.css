@@ -66,6 +66,10 @@
     justify-content: center;
 }
 
+.justify-content-end{
+    justify-content: flex-end;
+}
+
 .align-items-center{
     align-items: center;
 }
@@ -138,8 +142,12 @@
     background-color: #080b12;
 }
 
+.bg-cinder{
+    background-color: #141922;
+}
+
 .bg-dark-grey{
-    background-color: #282828;
+    background-color: #40444a;
 }
 
 .bg-grey{
@@ -230,6 +238,26 @@
     color: #61082b;
 }
 
+.width-15{
+    width: 15px;
+}
+
+.width-25{
+    width: 25px;
+}
+
+.width-30{
+    width: 30px;
+}
+
+.width-45{
+    width: 45px;
+}
+
+.width-80{
+    width: 80px;
+}
+
 .width-20-pc{
     width: 20%;
 }
@@ -245,6 +273,7 @@
 .width-45-pc{
     width: 45%;
 }
+
 .width-50-pc{
     width: 50%;
 }
@@ -259,6 +288,10 @@
 
 .width-80-pc{
     width: 80%;
+}
+
+.width-90-pc{
+    width: 90%;
 }
 
 .width-100-pc{
@@ -321,12 +354,20 @@
     padding: 30px;
 }
 
+.padding-top-10{
+    padding-top: 10px;
+}
+
 .padding-top-40{
     padding-top: 40px;
 }
 
 .padding-top-60{
     padding-top: 60px;
+}
+
+.padding-right{
+    padding-right: 10px;
 }
 
 .padding-bottom-60{
@@ -337,6 +378,9 @@
     padding: 20px 20px 0 20px;
 }
 
+.padding-l-r-5{
+    padding: 0 5px;
+}
 .padding-l-r-20{
     padding: 0 20px;
 }
@@ -411,6 +455,12 @@
 
 .margin-left{
     margin-left: 40px;
+}
+
+.button{
+    padding: 10px 30px;
+    border: 1px solid white;
+    border-radius: 40px;
 }
 
 .button-white{
