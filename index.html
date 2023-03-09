@@ -19,31 +19,31 @@
                     <img class="display-block width-25 img-logo-1" src="./assets/img/logo-small.svg" alt="Logo">
                     <img class="width-60-pc display-none display-block" src="./assets/img/logo.svg" alt="Logo">
                 </div>
-                <div class="flex margin-top-20 align-items-center img-side-bar-green">
-                    <img class="img-side-bar-green-2 width-1-25-rem display-block margin-auto img-side-bar" src="./assets/img/home.svg" alt="Home">
+                <div class="flex margin-top-20 align-items-center img-side-bar-green hover-sidebar">
+                    <img class="width-1-25-rem display-block margin-auto img-side-bar" src="./assets/img/home.svg" alt="Home">
                     <span class="c-grey display-none">Home</span>
                 </div>
-                <div class="flex margin-top-10 align-items-center">
+                <div class="flex margin-top-10 align-items-center hover-sidebar">
                     <img class="width-1-25-rem display-block margin-auto img-side-bar" src="./assets/img/search.svg" alt="Search">
                     <span class="c-grey display-none">Cerca</span>
                 </div>
-                <div class="flex margin-top-5 align-items-center">
+                <div class="flex margin-top-5 align-items-center hover-sidebar">
                     <img class="width-1-25-rem display-block margin-auto img-side-bar" src="./assets/img/libreria.svg" alt="Libreria">
                     <span class="c-grey display-none">La tua libreria</span>
                 </div>
                 <h5 class="c-white display-none">PLAYLIST</h5>
-                <div class="display-none side-bar-playlist">
+                <div class="display-none side-bar-playlist hover-sidebar">
                     <i class="fa-solid fa-square-plus c-grey"></i>
                     <span class="c-grey">Crea Playlist</span>
                 </div>
-                <ul class="c-grey display-none">
-                    <li>Nome playlist</li>
-                    <li>Nome playlist</li>
-                    <li>Nome playlist</li>
-                    <li>Nome playlist</li>
-                    <li>Nome playlist</li>
-                    <li>Nome playlist</li>
-                    <li>Nome playlist</li>
+                <ul class="display-none">
+                    <li class="c-grey">Nome playlist</li>
+                    <li class="c-grey">Nome playlist</li>
+                    <li class="c-grey">Nome playlist</li>
+                    <li class="c-grey">Nome playlist</li>
+                    <li class="c-grey">Nome playlist</li>
+                    <li class="c-grey">Nome playlist</li>
+                    <li class="c-grey">Nome playlist</li>
                 </ul>
             </div>
             <div class="flex align-items-center flex-direction-column padding-10 side-bar-bottom">
@@ -62,23 +62,23 @@
         <div class="container-content">
             <!-- HEADER -->
             <header class="bg-night flex justify-content-end align-items-center">
-                <div class="container-header padding-right">
-                    <a class="c-white text-decoration-none button font-size-10" href="#">EFFETTUA L'UPGRADE</a>
+                <div class="container-header padding-right-30">
+                    <a class="c-white text-decoration-none button font-size-10 display-block" href="#">EFFETTUA L'UPGRADE</a>
                 </div>
             </header>
     
             <!-- MAIN -->
             <main class="bg-cinder padding-10 overflow-auto">
                 <!-- SECTION 1 -->
-                <section class="c-grey container-section-1">
+                <section class="container-section-1">
                     <div>
                         <ul class="list-style-none flex flex-wrap justify-content-center font-size-15">
-                            <li>IN EVIDENZA</li>
-                            <li>PODCAST</li>
-                            <li>CLASSIFICHE</li>
-                            <li>GENERI E MOOD</li>
-                            <li>NUOVE USCITE</li>
-                            <li>SCOPRI</li>
+                            <li class="c-grey">IN EVIDENZA</li>
+                            <li class="c-grey">PODCAST</li>
+                            <li class="c-grey">CLASSIFICHE</li>
+                            <li class="c-grey">GENERI E MOOD</li>
+                            <li class="c-grey">NUOVE USCITE</li>
+                            <li class="c-grey">SCOPRI</li>
                         </ul>
                     </div>
                 </section>
@@ -89,37 +89,67 @@
                         <div class="flex flex-wrap container-playlist margin-top-30 justify-content-between">
                             <!-- HEAVY METAL -->
                             <div class="container-album text-center">
-                                <img class="width-100-pc display-block" src="./assets/img/metal_lifting.jpg" alt="Heavy-Metal">
+                                <div class="relative display-block">
+                                    <img class="width-100-pc display-block" src="./assets/img/metal_lifting.jpg" alt="Heavy-Metal">
+                                    <div class="card-hover">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
                                 <h5 class="margin-top-10">Heavy Metal</h5>
                                 <span class="c-grey font-size-12 display-block margin-top-10">Subtitle</span>
                             </div>
                             <!-- STRANGER THINGS -->
                             <div class="container-album text-center">
-                                <img class="width-100-pc display-block" src="./assets/img/stranger.jpeg" alt="Stranger-Things">
+                                <div class="relative display-block">
+                                    <img class="width-100-pc display-block" src="./assets/img/stranger.jpeg" alt="Stranger-Things">
+                                    <div class="card-hover">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
                                 <h5 class="margin-top-10">Stranger Things, Vol.1(a Netflix Original Series Soundtrack)</h5>
                                 <span class="c-grey font-size-12 display-block margin-top-10">Kyle Dixon & Michael Stein</span>
                             </div>
                             <!-- A QUIET PLACE -->
                             <div class="container-album text-center margin-top-20">
-                                <img class="width-100-pc display-block" src="./assets/img/aquietplace.jpeg" alt="A-quiet-place">
+                                <div class="relative display-block">
+                                    <img class="width-100-pc display-block" src="./assets/img/aquietplace.jpeg" alt="A-quiet-place">
+                                    <div class="card-hover">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
                                 <h5 class="margin-top-10">A quiet place</h5>
                                 <span class="c-grey font-size-12 display-block margin-top-10">Subtitle</span>
                             </div>
                             <!-- SPLIT -->
                             <div class="container-album text-center margin-top-20">
-                                <img class="width-100-pc display-block" src="./assets/img/split.jpeg" alt="Split">
+                                <div class="relative display-block">
+                                    <img class="width-100-pc display-block" src="./assets/img/split.jpeg" alt="Split">
+                                    <div class="card-hover">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
                                 <h5 class="margin-top-10">Split</h5>
                                 <span class="c-grey font-size-12 display-block margin-top-10">Subtitle</span>
                             </div>
                             <!-- A CURE FOR WELLNESS -->
                             <div class="container-album text-center margin-top-20">
-                                <img class="width-100-pc display-block" src="./assets/img/cure.jpeg" alt="A-cure-for-wellness">
+                                <div class="relative display-block">
+                                    <img class="width-100-pc display-block" src="./assets/img/cure.jpeg" alt="A-cure-for-wellness">
+                                    <div class="card-hover">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
                                 <h5 class="margin-top-10">A cure for wellness</h5>
                                 <span class="c-grey font-size-12 display-block margin-top-10">Subtitle</span>
                             </div>
                             <!-- SINISTER -->
                             <div class="container-album text-center margin-top-20">
-                                <img class="width-100-pc display-block" src="./assets/img/sinister.jpeg" alt="Sinister">
+                                <div class="relative display-block">
+                                    <img class="width-100-pc display-block" src="./assets/img/sinister.jpeg" alt="Sinister">
+                                    <div class="card-hover">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
                                 <h5 class="margin-top-10">Sinister</h5>
                                 <span class="c-grey font-size-12 display-block margin-top-10">Subtitle</span>
                             </div>
@@ -134,12 +164,22 @@
                         <div class="flex flex-wrap justify-content-between container-section-3-card">
                             <!-- RELEASE RADAR -->
                             <div class="container-album text-center margin-top-20">
-                                <img class="width-100-pc display-block" src="./assets/img/radar.jpeg" alt="Radar">
+                                <div class="relative display-block">
+                                    <img class="width-100-pc display-block" src="./assets/img/radar.jpeg" alt="Radar">
+                                    <div class="card-hover">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
                                 <h4>Release Radar</h4>
                             </div>
                             <!-- DAILY MIX 1 -->
                             <div class="container-album text-center margin-top-20">
-                                <img class="width-100-pc display-block" src="./assets/img/mixdaily.jpeg" alt="Mix">
+                                <div class="relative display-block">
+                                    <img class="width-100-pc display-block" src="./assets/img/mixdaily.jpeg" alt="Mix">
+                                    <div class="card-hover">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
+                                </div>
                                 <h4>Daiy Mix 1</h4>
                             </div>
                         </div>
@@ -174,10 +214,12 @@
             <!-- LEFT FOOTER -->
             <div class="container-footer-left flex align-items-center">
                 <img class="width-45 display-block" src="./assets/img/sinister.jpeg" alt="Sinister">
-                <div class="padding-l-r-5 container-song-name">
-                    <h6 class="font-size-15">Sinister</h6>
-                    <span class="display-block font-size-12 c-grey song-name">Brano</span>
-                    <span class="font-size-12 c-grey">Nome</span>
+                <div class="padding-l-r-5 container-song-name c-grey">
+                    <h6 class="font-size-15 c-white">Sinister</h6>
+                    <div class="container-song-name-2">
+                        <span class="display-block font-size-12 song-name">Brano</span>
+                        <span class="font-size-12">Nome</span>
+                    </div>
                 </div>
                 <div class="flex flex-direction-column display-none container-footer-left-song">
                     <i class="fa-regular fa-heart c-grey"></i>
@@ -196,7 +238,9 @@
                 <div class="flex margin-top-10 display-none container-player">
                     <span class="player-time-start">0:25</span>
                     <div class="player-bar">
-                        <div class="player-time"></div>
+                        <div class="player-time relative">
+                            <div class="circle-bar"></div>
+                        </div>
                     </div>
                     <span class="player-time-end">4:35</span>
                 </div>
@@ -207,7 +251,9 @@
                 <i class="fa-solid fa-display display-none"></i>
                 <i class="fa-solid fa-volume-high font-size-12"></i>
                 <div class="audio-bar">
-                    <div class="audio-range"></div>
+                    <div class="audio-range relative">
+                        <div class="circle-bar"></div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -47,6 +47,25 @@ main{
 
 .container-album{
     flex-basis: 48%;
+    cursor: pointer;
+}
+
+.card-hover{
+    display: none;
+    position: absolute;
+    font-size: 50px;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.card-hover i {
+    position: absolute;
+    top: calc(50% - 1.75rem);
+    left: calc(50% - 1.75rem);
 }
 
 .circle-img {
@@ -93,6 +112,17 @@ main{
     height: 100%;
     border-radius: 20px;
     background-color: #C1C1C1;
+}
+
+.circle-bar{
+    width: 14px;
+    aspect-ratio: 1 / 1;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    left: 90%;
+    display: none;
 }
 
 /* TABLET */
@@ -211,9 +241,17 @@ main{
 
 }
 
-/* DESKTOP */
+/* LAPTOP */
 @media only screen and (min-width: 1024px){
 
+    .container-side-bar{
+        max-width: 150px;
+    }
+
+    .container-content{
+        flex: 1;
+    }
+    
     header{
         width: 100%;
     }
@@ -238,4 +276,113 @@ main{
         gap: 20px;
     }
 
+    .container-album{
+        flex-basis: 25%;
+    }
+
+    .container-song-name{
+        margin-right: 20px;
+    }
+
+    .container-footer-left-song{
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    .container-footer-left-song .fa-heart{
+        margin-right: 15px;
+    }
+
+    footer .fa-backward-step{
+        margin: 0 30px;
+    }
+
+    footer .fa-circle-play{
+        font-size: 30px;
+    }
+
+    footer .fa-forward-step{
+        margin: 0 30px;
+    }
+
+    footer .player-bar{
+        width: 400px;
+        margin: 0 20px;
+    }
+
+    footer .fa-display{
+        margin: 0 15px;
+    }
+
+    footer .fa-volume-high{
+        margin-right: 10px;
+    }
+
+    footer .audio-bar{
+        width: 100px;
+    }
+
+    /* HOVER */
+    .c-grey:hover, .hover-sidebar:hover .c-grey, .container-side-bar img:hover{
+        cursor: pointer;
+        color: #fff;
+    }
+
+    .side-bar-playlist:hover .c-grey{
+        color: #fff;
+    }
+
+    .container-header .button:hover{
+        transform: scale(1.2);
+    }
+
+    .container-album:hover .card-hover{
+        display: block;
+        background-color: rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+    }
+
+    .fa-heart:hover{
+        color: red;
+    }
+
+    .fa-folder:hover{
+        color: green;
+    }
+
+    .fa-circle-play:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+
+    .audio-bar:hover .audio-range, .player-bar:hover .player-time{
+        background-color: #adff2f;
+    }
+
+    .audio-bar:hover .circle-bar, .player-bar:hover .circle-bar{
+        display: block;
+    }
+
+    .container-song-name-2:hover{
+        border-bottom: 1px solid white;
+    }
+
+}
+/* DESKTOP */
+@media only screen and (min-width: 1440px){
+
+    .container-playlist{
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        gap: 30px;
+    }
+
+    .container-playlist .container-album{
+        flex-basis: 20%;
+        margin-top: 0;
+    }
+
+    .container-album{
+        flex-basis: 15%;
+    }
 }
